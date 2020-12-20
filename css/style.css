@@ -37,7 +37,7 @@ body {
 
 .head-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     max-width: 1249px;
     margin: 0 auto 103px;
     background-color: #2D2D2D;
@@ -47,6 +47,8 @@ body {
 .site-menu {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
@@ -174,7 +176,12 @@ li:hover {
 }
 
 .service {
-    width: 50%;
+    width: 48%;
+}
+
+.first,
+.third {
+    padding-right: 20px;
 }
 
 .service h3  {
@@ -686,6 +693,170 @@ button:hover {
     opacity: 0.8;
 }
 
+@media (max-width: 950px)  {
+    .intro {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 107.47px;
+    }
+
+    .intro-wrapper {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1057px) {
+    .services-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .services-description {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .services-description p,
+    .services-description h2 {
+        padding-bottom: 20px;
+    }
+
+    .services {
+        width: 100%;
+    }
+}
+
+@media (max-width: 537px){
+    .service {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 454px) {
+    .description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-description {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1303px) {
+    .team-leader {
+        margin: 0;
+    }
+
+    .team-list-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team {
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 
+@media (max-width: 360px) {
+    .intro-wrapper h1 {
+        font-size: 42.19px;
+    }
 
+    .first,
+    .third {
+        padding: 0;
+    }
+
+    .center-line {
+        margin: 0 auto 86px;
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+
+    .product {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .team-wrapper {
+        text-align: center;
+    }
+
+    .team-leader {
+        width: 100%;
+    }
+
+    .team-list-wrapper {
+        text-align: center;
+    }
+
+    .team {
+        text-align: center;
+    }
+
+    .member {
+        margin-right: 0;
+    }
+
+    .contact-information {
+        margin: 0 auto 20px;
+        width: 70%;
+    }
+
+    .touch-text-wrapper {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .touch-text {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .feedback-text-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feedback-text {
+        margin: 0;
+        padding-right: 2vw;
+    }
+
+    .feedback-name-email {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    .feedback-name {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .feedback-mail {
+        width: 70%;
+    }
+
+    .send-button {
+        margin-bottom: 20px;
+    }
+}
