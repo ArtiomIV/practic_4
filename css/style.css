@@ -33,6 +33,7 @@ body {
 .head-out-wrapper {
     background: #F6F2F2;
     padding-top: 29px;
+
 }
 
 .head-wrapper {
@@ -42,6 +43,22 @@ body {
     margin: 0 auto 103px;
     background-color: #2D2D2D;
     justify-content: center;
+}
+
+.menu-button {
+    visibility: hidden;
+    width: 100px;
+    height: 50px;
+    background-color: #FF3F40;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .site-menu {
@@ -55,23 +72,20 @@ body {
     font-weight: 800;
 }
 
-.site-menu li {
+.site-menu a {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     height: 89px;
     padding: 0 40px;
-}
-
-li:hover {
-    background-color: #FF3F40;
-}
-
-.site-menu a {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
+}
+
+.site-menu a:hover {
+    background-color: #FF3F40;
 }
 
 .intro {
@@ -113,6 +127,7 @@ li:hover {
     color: #ffffff;
     background: #FF2D2D;
     border: none;
+    border-radius: 5px;
     outline: none;
     margin-bottom: 123px;
 }
@@ -165,14 +180,19 @@ li:hover {
     font-size: 18.04px;
     color: #FF2D2D;
     border: 2px solid #FF0000;
-    background: #ffffff;
+    border-radius: 5px;
     outline: none;
+    background: #ffffff;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+}
+
+.img {
+    margin-top: 20px;
 }
 
 .service {
@@ -277,19 +297,20 @@ li:hover {
 .catalog-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 2vw;
     max-width: 1249px;
     margin: 0 auto 137px;
 }
 
 .product {
-    display: flex;
-    flex: 1 1 293px;
-    width: 23%;
-    height: 293px;
-    background: #5281FF;;
-    margin: 0 5px 10px 5px;
+    flex: 1 1 24%;
+    min-width: 250px;
+    max-width: 299px;
+    height: 291px;
+    background: #5281FF;
+    margin-bottom: 18px;
+    object-fit: cover;
 }
 
 /*Team*/
@@ -338,11 +359,12 @@ li:hover {
 
 .team-leader {
     display: flex;
-    width: 26%;
-    height: 1 1 460px;
-    height: 460px;
+    max-width: 321px;
+    max-height: 460px;
+    flex: 1 1 460px;
     margin-right: 37px;
-    background: #FF3F40;
+    margin-top: 20px;
+    background: #eb6d4a8f;
 }
 
 .team {
@@ -395,6 +417,7 @@ li:hover {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
@@ -402,9 +425,9 @@ li:hover {
     display: flex;
     position: relative;
     flex: 1 1 200px;
-    height: 200px;
-    width: 22%;
-    background: #FF3F40;
+    max-height: 214px;
+    max-width: 197px;
+    background: #d4dce680;
     margin: 19px 19px 0 0;
 }
 
@@ -417,7 +440,7 @@ li:hover {
     bottom: 0;
     margin: 0;
     width: 100%;
-    height: 31px;
+    height: 37px;
     color: #ffffff;
     background: #000;
     opacity: 0.5;
@@ -476,6 +499,7 @@ li:hover {
     color: #000000;
     padding: 0 0 0 38px;
     border: none;
+    border-radius: 5px;
     outline: none;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -489,6 +513,7 @@ li:hover {
     background: #FF2D2D;
     color: #ffffff;
     border: none;
+    border-radius: 5px;
     outline: none;
     text-transform: uppercase;
     font-family: 'Open Sans';
@@ -563,14 +588,15 @@ li:hover {
 
 .feedback-name,
 .feedback-mail {
-    width: 39.4%;
+    width: 289px;
     height: 70px;
     background: #8e8e8e;
     background-color: #f3f3f3;
     margin-bottom: 20px;
-    padding-left: 50px;
     border: none;
+    border-radius: 5px;
     outline: none;
+    padding-left: 50px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 16px;
@@ -586,19 +612,16 @@ li:hover {
     flex: 1 1 252px;
     height: 252px;
     width: 100%;
-    background: #8e8e8e;
-    background-color: #f3f3f3;
     margin-bottom: 43px;
-    border: none;
-    outline: none;
 }
 
 .feedback {
     width: 100%;
     height: 221.77px;
-    border: none;
     outline: none;
     resize: none;
+    border: none;
+    border-radius: 5px;
     overflow: hidden;
     background: #8e8e8e;
     background-color: #f3f3f3;
@@ -617,6 +640,7 @@ li:hover {
     height: 75px;
     background: #FF3B3B;
     border: none;
+    border-radius: 5px;
     outline: none;
     font-family: 'Open Sans';
     font-weight: 700;
@@ -689,11 +713,15 @@ li:hover {
 	margin-right: 18px;
 }
 
+.footer-link:hover {
+    opacity: 0.5;
+}
+
 button:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 950px)  {
+@media (max-width: 1286px) {
     .intro {
         flex-wrap: wrap;
         justify-content: center;
@@ -708,9 +736,7 @@ button:hover {
         text-align: center;
         margin: 0;
     }
-}
 
-@media (max-width: 1057px) {
     .services-wrapper {
         flex-wrap: wrap;
     }
@@ -730,29 +756,16 @@ button:hover {
     .services {
         width: 100%;
     }
-}
 
-@media (max-width: 537px){
-    .service {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 454px) {
     .description {
         text-align: center;
     }
-}
-
-@media (max-width: 600px) {
-    .team-description {
-        width: 100%;
-        justify-content: center;
+    
+    .product{
+        max-width: 100%;
+        margin-right: 1vw;
     }
-}
 
-@media (max-width: 1303px) {
     .team-leader {
         margin: 0;
     }
@@ -766,6 +779,78 @@ button:hover {
     .team {
         width: 100%;
         justify-content: center;
+    }
+
+    .touch-text-wrapper {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .touch-text {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .feedback-text-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feedback-text {
+        margin: 0;
+        padding-right: 2vw;
+    }
+
+    .left-box {
+        display: none;
+    }
+
+    .feedback-name-email {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    .feedback-name {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .feedback-mail {
+        width: 100%;
+    }
+
+    .send-button {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 734px) {
+    .head-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .site-menu {
+        display: none;
+    }
+
+    .site-menu a {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-button {
+        visibility: visible;
+    }
+
+    .visible {
+        display: flex;
+    }
+}
+
+@media (max-width: 414px){
+    .service {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -794,11 +879,15 @@ button:hover {
 
     .product {
         margin-right: 0;
-        margin-left: 0;
     }
 
     .team-wrapper {
+        justify-content: center;
         text-align: center;
+    }
+
+    .team-description {
+        width: 100%;
     }
 
     .team-leader {
@@ -812,7 +901,6 @@ button:hover {
     .team {
         text-align: center;
     }
-
     .member {
         margin-right: 0;
     }
@@ -832,31 +920,13 @@ button:hover {
         justify-content: center;
     }
 
-    .feedback-text-wrapper {
+    .footer-content {
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 
-    .feedback-text {
-        margin: 0;
-        padding-right: 2vw;
-    }
-
-    .feedback-name-email {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-    }
-    .feedback-name {
-        width: 70%;
-        margin-right: 0;
-    }
-
-    .feedback-mail {
-        width: 70%;
-    }
-
-    .send-button {
+    .footer-content span {
         margin-bottom: 20px;
     }
 }

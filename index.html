@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script async src="js/script.js"></script>
     <title>Practic_4</title>
 </head>
 <body>
     <div class="head-out-wrapper">
         <div class="head-wrapper">
-                <ul class="site-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <button class="menu-button">Menu</button>
+            <div class="site-menu">
+                <a href="#">Home</a>
+                <a href="#">Portfolio</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+            </div>
         </div>  
         <div class="intro">
             <div class="intro-wrapper">
@@ -39,21 +41,25 @@
         </div>
         <div class="services">
             <div class="service first">
+                <img class="managment-image img" src="img/service-1.png" alt="managment image" width="41" height="41">
                 <h3>Managment</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum amet asperiores aspernatur repudiandae 
                 cumque sunt, nam autem possimus in suscipit, corporis non error rerum quasi esse a tempora eos!</p>
             </div>
             <div class="service">
+                <img class="service-image img" src="img/service-2.png" alt="service image" width="41" height="41">
                 <h3>UI / UX Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum amet asperiores aspernatur repudiandae 
                 cumque sunt, nam autem possimus in suscipit, corporis non error rerum quasi esse a tempora eos!</p>
                 </div>
             <div class="service third">
+                <img class="brending-image img" src="img/service-3.png" alt="brending image" width="41" height="41">
                 <h3>Logo / Brendng</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum amet asperiores aspernatur repudiandae 
                 cumque sunt, nam autem possimus in suscipit, corporis non error rerum quasi esse a tempora eos!</p>
             </div>
             <div class="service">
+                <img class="animation-image img" src="img/service-4.png" alt="animation image" width="50" height="41">
                 <h3>Animation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum amet asperiores aspernatur repudiandae 
                 cumque sunt, nam autem possimus in suscipit, corporis non error rerum quasi esse a tempora eos!</p>
@@ -80,14 +86,14 @@
         </div>
     </div>  
     <div class="catalog-wrapper">
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
+        <img class="product" src="img/work-1.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-2.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-3.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-4.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-5.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-6.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-7.jpg" alt="product-image" width="299" height="291">
+        <img class="product" src="img/work-8.jpg" alt="product-image" width="299" height="291">
     </div>
     <div class="team-wrapper">
         <div class="team-description">
@@ -99,7 +105,7 @@
         </div>
     </div>
     <div class="team-list-wrapper">
-        <div class="team-leader"></div>
+        <div class="team-leader"><img class="leader-image man" src="img/man.svg" alt="team leader image" width="321" height="458"></div>
         <div class="team"> 
             <h2>Mark Waugh</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolore tenetur enim ea sit dolorum pariatur, quos error 
@@ -114,15 +120,19 @@
             </div>
             <div class="team-list">
                 <div class="member">
+                    <img class="member-image girl" src="img/girl.svg" alt="member-image" width="197" height="214">
                     <h3 class="member-name">sokina jue</h3>
                 </div>
                 <div class="member">
+                    <img class="member-image girl" src="img/girl.svg" alt="member-image" width="197" height="214">
                     <h3 class="member-name">sokina jue</h3>
                 </div>
                 <div class="member">
+                    <img class="member-image girl" src="img/girl.svg" alt="member-image" width="197" height="214">
                     <h3 class="member-name">sokina jue</h3>
                 </div>
                 <div class="member">
+                    <img class="member-image girl" src="img/girl.svg" alt="member-image" width="197" height="214">
                     <h3 class="member-name">sokina jue</h3>
                 </div>
             </div>
@@ -131,7 +141,7 @@
     <div class="midle-header">
         <h1>Design tips, tricks, and freebies. Delivered weekly</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <form class="email-text-wrapper" action="" method="GET">
+        <form class="email-text-wrapper" action="#" method="GET">
             <input class="contact-information" type="email" name="email" placeholder="Email adress..." required>
             <button type="submit">Subscribe</button>
         </form>
@@ -146,7 +156,7 @@
     </div>
     <div class="feedback-text-wrapper">
         <div class="left-box"></div>
-        <form class="feedback-text" action='' method='GET'>
+        <form class="feedback-text" action='#' method='GET'>
             <div class="feedback-name-email">
                 <input class="feedback-name name" type='text' name='name' placeholder='Name' required>
                 <input class="feedback-mail" type='email' name='email' placeholder="Your email adress" required>
